@@ -7,4 +7,4 @@ Video: https://www.bilibili.com/video/BV19t4y1b7av?share_source=copy_web
 
 Project: https://sites.google.com/view/gccd-pt/site
 
-Codes: stay tuned 
+Codes: the version 1.0 is released! 
