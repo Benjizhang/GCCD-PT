@@ -1,5 +1,7 @@
 # GCCD-PT
-***Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments.***
+***Generalized Continuous Collision Detection Framework of Polynomial Trajectory***
+
+This repository is the source code of the paper "A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments." RA-L with IROS 2022 (DOI: 10.1109/LRA.2022.3191934).
 
 * PDF: https://arxiv.org/abs/2206.13175
 
@@ -8,20 +10,26 @@
 * Project: https://sites.google.com/view/gccd-pt/site
 
 ## News
-* The version 1.0 is released: 
-**Exp. on CCD for the quadrotor with the ellipsoid is given.**
+* The [v1.0](https://github.com/Benjizhang/GCCD-PT/releases) is released: 
+**Exp. on CCD for the quadrotor with the ellipsoid.**
 
-https://user-images.githubusercontent.com/20884450/179402216-e860c94f-f81d-4742-8931-1f895b88c84c.mp4
-
-## Introduction
-This repository is the source code of the paper "A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments." RA-L with IROS 2022 (DOI: 10.1109/LRA.2022.3191934).
 
 ## Test Environment
 * Windows 10
-* MATLAB R2022a
+* MATLAB R2022a (The lower version up to R2017a should be ok as well.)
+
+## Install
+1. Fork the **GCCD-PT** repository onto your github account and then clone this repository.
+2. Open MATLAB.
+3. Find and change direction to the **GCCD-PT** folder.
+4. Run ***initialize_GCCD_PT.m***.
+5. Enjoy it after seeing `` ---- GCCD-PT Initialized Successfully ----`` in the command window.
+
+## Get Started
+* Run example files in the **script** folder.
 
 ## Citation
-If you find this code or paper is helpful, you can star this repository and cite our paper:
+If you find the codes and/or paper are helpful, you can star this repository and cite our paper:
 
 ```
 @article{zhang2022generalized,
@@ -32,8 +40,10 @@ If you find this code or paper is helpful, you can star this repository and cite
 }
 ```
 
-## Contact
-Zeqing Zhang (zzqing@connect.hku.hk)
+## Enquiry:
+As an open source libary, any problem/feedback/issue/bug are welcome.
+
+Author: Benji Z. Zhang ([Email](zzqing@connect.hku.hk))
 
 
 
