@@ -11,6 +11,12 @@
 
 clc; clear; close all;
 
+%% root path
+file = mfilename('fullpath');
+[filepath,name,ext] = fileparts(file);
+root_path = [filepath '\..'];
+cd(root_path)
+
 %% generate & plot the tilted ellipsoid
 area = [3 6.5 2.5 7 2.8 7.2]*100;
 degX = 40; %(degree)
@@ -201,7 +207,6 @@ p2 = plot3(ax1,w(:,1),w(:,2),w(:,3),'r','LineWidth',1.2);
 legend([p1 p2],{'collision-free','collision'},'Location','best','FontSize',20)
 
 %% animation for a path
-cd script\
 isAnimate = 1;
 if isAnimate == 1
     figure

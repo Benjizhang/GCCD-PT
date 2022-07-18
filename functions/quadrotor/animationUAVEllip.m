@@ -116,7 +116,7 @@ function animationUAVEllip(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoN
 
         pause(0.1)
     end
-    v = VideoWriter(['.\..\video\' videoName]);
+    v = VideoWriter(['.\video\' videoName]);
     v.FrameRate = t_f;
     open(v)
     writeVideo(v,mov);
