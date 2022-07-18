@@ -43,7 +43,7 @@ If you find the codes and/or paper are helpful, you can star this repository and
 ## Enquiry:
 As an open source libary, any problem/feedback/issue/bug are welcome.
 
-Author: Benji Z. Zhang ([Email](zzqing@connect.hku.hk))
+Contact: Benji Z. Zhang (zzqing@connect.hku.hk)
 
 
 
