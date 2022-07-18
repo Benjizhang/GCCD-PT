@@ -26,7 +26,9 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 5. Enjoy it after seeing `` ---- GCCD-PT Initialized Successfully ----`` in the command window.
 
 ## Get Started
-* Run example files in the **script** folder.
+* Run example files in the **script** folder. For example:
+
+![example_script](https://user-images.githubusercontent.com/20884450/179448662-37c18f78-4f72-4143-81e8-345d8c7d24b5.png)
 
 ## Citation
 If you find the codes and/or paper are helpful, you can star this repository and cite our paper:
@@ -44,6 +46,7 @@ If you find the codes and/or paper are helpful, you can star this repository and
 As an open source libary, any problem/feedback/issue/bug are welcome.
 
 Contact: Benji Z. Zhang (zzqing@connect.hku.hk)
+
 
 
 
