@@ -212,12 +212,12 @@ if isAnimate == 1
     figure
     ax2 = gca;
     set(gca,'position',[0.05,0.03,0.95,0.96] )
-    set(gcf,'position',[0,0,1000,1000])
+    set(gcf,'position',[0,0,1300,1000])
     trajId = 1;
     g = 9.80665*100; % cm
     % specify the video name
     videoname = ['T' num2str(trajId) '_10fps_v3'];
     obsInfo = sEllip;
-    animationUAVEllip(ax2,robpts,trajALL,trajId,obsInfo,tm_via,g,[260 area(2:end)],videoname,intvCF)
+    animationUAVEllip(ax2,gcf,robpts,trajALL,trajId,obsInfo,tm_via,g,[260 area(2:end)],videoname,intvCF)
 end
 

@@ -22,14 +22,14 @@ function plotCur6DofUAVFillBox3d(ax,robpts,path,cur_time)
     Y_rbt = robpts_wd(ptOrder,2);
     Z_rbt = robpts_wd(ptOrder,3);
     plot3(ax, X_rbt,Y_rbt,Z_rbt,'Color','m','LineWidth',1,'LineStyle','--');
-    hold on
+    hold(ax,"on")
     ptOrder2 = [2 6; 7 3; 4 8];
     for i = 1:size(ptOrder2,1)
         X_rbt = robpts_wd(ptOrder2(i,:),1); % R^{num_edge*3}
         Y_rbt = robpts_wd(ptOrder2(i,:),2);
         Z_rbt = robpts_wd(ptOrder2(i,:),3);
-        plot3(ax, X_rbt,Y_rbt,Z_rbt,'Color','m','LineWidth',1,'LineStyle','--');    
-        hold on
+        plot3(ax, X_rbt,Y_rbt,Z_rbt,'Color','m','LineWidth',1,'LineStyle','--');
+        hold(ax,"on")
     end
 
     % plot 4 quadmotors
@@ -55,7 +55,7 @@ function plotCur6DofUAVFillBox3d(ax,robpts,path,cur_time)
     for i = 1:4
         curCent = [curx; cury; curz]+ R_cur*motorCent(i,:)'; % R^{3*1}
         plot3(ax, [curCent(1) motorCent_wd(i,1)],[curCent(2) motorCent_wd(i,2)],[curCent(3) motorCent_wd(i,3)],'k','LineWidth',3)
-        hold on
+        hold(ax,"on")
     end
 
 end

@@ -4,7 +4,7 @@
 % 
 % @ Benji Z. Zhang
 
-function animationUAVEllip(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoName,intvIF)
+function animationUAVEllip(ax,gcf,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoName,intvIF)
 
     % get path (x,y,z)
     path = getTrajXYZ3d(trajALL, trajId);
@@ -32,7 +32,7 @@ function animationUAVEllip(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoN
     % 50 fps
     for curT = tm_via(1):0.02:tm_via(2)
         cnt = cnt + 1;
-        hold off
+        hold(ax,"off")
         plotCur6DofUAVFillBox3d(ax,robpts,path,curT)
         % update x,y,z,phi,theta,psi 
         curx = polyval(path{1},curT);
@@ -46,23 +46,23 @@ function animationUAVEllip(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoN
         txtPphi = ['\phi: ' num2str(round(curPhi,2))];
         txtPthe = ['\theta: ' num2str(round(curTheta,2))];
         txtPpsi = '\psi: 0';
-        text(640,260,670,txtPx,'FontSize',17)
-        text(640,260,640,txtPy,'FontSize',17)
-        text(640,260,610,txtPz,'FontSize',17)
-        text(640,260,580,txtPphi,'FontSize',17)
-        text(640,260,550,txtPthe,'FontSize',17)
-        text(640,260,520,txtPpsi,'FontSize',17)
+        text(ax,640,260,670,txtPx,'FontSize',17)
+        text(ax,640,260,640,txtPy,'FontSize',17)
+        text(ax,640,260,610,txtPz,'FontSize',17)
+        text(ax,640,260,580,txtPphi,'FontSize',17)
+        text(ax,640,260,550,txtPthe,'FontSize',17)
+        text(ax,640,260,520,txtPpsi,'FontSize',17)
         txtT = ['Time: ' num2str(round(curT,2)) ' s'];
-        text(600,260,700,txtT,'FontSize',17)        
+        text(ax,600,260,700,txtT,'FontSize',17)        
         
         % show collision or collision free
         flagCollisionFree = isCollisionFree(curT,intvIF);
         if flagCollisionFree
             txtCol = 'Collision Free';
-            text(310,670,670,txtCol,'FontSize',17,'Color','c')
+            text(ax,310,670,670,txtCol,'FontSize',17,'Color','c')
         else
             txtCol = 'Collision!';
-            text(310,670,670,txtCol,'FontSize',17,'Color','r')
+            text(ax,310,670,670,txtCol,'FontSize',17,'Color','r')
         end
         if curT <= intvIF(1,2)
             % history traj.
@@ -100,19 +100,19 @@ function animationUAVEllip(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,videoN
         
         % plot the ellipsoid
         sEllip = obsInfo;        
-        surf(sEllip.XData,sEllip.YData,sEllip.ZData,'FaceAlpha',0.4,'EdgeColor','k');
-        surf(sEllip.XData,sEllip.YData,area(5)*ones(size(sEllip.YData)),'FaceColor',[0.85 0.85 0.85],'EdgeColor','none');
+        surf(ax,sEllip.XData,sEllip.YData,sEllip.ZData,'FaceAlpha',0.4,'EdgeColor','k');
+        surf(ax,sEllip.XData,sEllip.YData,area(5)*ones(size(sEllip.YData)),'FaceColor',[0.85 0.85 0.85],'EdgeColor','none');
 
-        view([-64 15])
-        axis equal
-        xlabel('x (cm)','FontWeight','bold')
-        ylabel('y (cm)','FontWeight','bold')
-        zlabel('z (cm)','FontWeight','bold')
-        axis(area)
-        grid on        
-        box on        
-        drawnow;
-        mov(cnt) = getframe(gcf);%  记录动画帧
+        view(ax,[-64 15])
+        axis(ax,'equal')
+        xlabel(ax,'x (cm)','FontWeight','bold')
+        ylabel(ax,'y (cm)','FontWeight','bold')
+        zlabel(ax,'z (cm)','FontWeight','bold')
+        axis(ax,area)
+        grid(ax,'on')       
+        box(ax,'on')      
+        % drawnow;
+        mov(cnt) = getframe(gcf);
 
         pause(0.1)
     end
