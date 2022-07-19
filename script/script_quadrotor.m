@@ -207,17 +207,22 @@ p2 = plot3(ax1,w(:,1),w(:,2),w(:,3),'r','LineWidth',1.2);
 legend([p1 p2],{'collision-free','collision'},'Location','best','FontSize',20)
 
 %% animation for a path
+%%% Note: Do NOT close/maximize/minimize the window, where the animation is playing
 isAnimate = 1;
 if isAnimate == 1
     figure
     ax2 = gca;
-    set(gca,'position',[0.05,0.03,0.95,0.96] )
-    set(gcf,'position',[0,0,1300,1000])
+    cf = gcf;
+    set(ax2,'position',[0.08,0.03,0.82,0.95])
+    set(cf,'position',[920,100,910,810])
     trajId = 1;
     g = 9.80665*100; % cm
     % specify the video name
-    videoname = ['T' num2str(trajId) '_10fps_v3'];
-    obsInfo = sEllip;
-    animationUAVEllip(ax2,gcf,robpts,trajALL,trajId,obsInfo,tm_via,g,[260 area(2:end)],videoname,intvCF)
+    videoname = ['T' num2str(trajId) '_10fps'];
+
+    obsInfo.XData = sEllip.XData;
+    obsInfo.YData = sEllip.YData;
+    obsInfo.ZData = sEllip.ZData;
+    animationUAVEllip(ax2,cf,robpts,trajALL,trajId,obsInfo,tm_via,g,[260 area(2:end)],videoname,intvCF)
 end
 
