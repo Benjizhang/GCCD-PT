@@ -18,6 +18,11 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 * Windows 10
 * MATLAB R2022a (The lower version up to R2017a should be ok as well.)
 
+## Prerequisites
+You may need to install the following toolboxes at first.
+* Optimization
+* Image Processing
+
 ## Install
 1. Fork the **GCCD-PT** repository onto your github account and then clone this repository.
 2. Open MATLAB.
