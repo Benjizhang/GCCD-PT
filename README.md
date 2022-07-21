@@ -16,10 +16,10 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 
 ## Test Environment
 * Windows 10
-* MATLAB R2022a (The lower version up to R2017a should be ok as well.)
+* MATLAB R2022a (R2017a and later should be ok as well.)
 
-## Prerequisites
-You may need to install the following toolboxes at first.
+## Prerequisites (Optional)
+You may be informed to install the following toolboxes by MATLAB (if any).
 * Optimization
 * Image Processing
 
@@ -48,7 +48,7 @@ If you find the codes and/or paper are helpful, you can star this repository and
 ```
 
 ## Enquiry:
-As an open source libary, any problem/feedback/issue/bug are welcome.
+As an open source library, any problem/feedback/issue/bug are welcome.
 
 Contact: Benji Z. Zhang (zzqing@connect.hku.hk)
 
