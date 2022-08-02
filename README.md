@@ -5,6 +5,8 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 
 * PDF: https://arxiv.org/abs/2206.13175
 
+* DOI: https://ieeexplore.ieee.org/document/9833268
+
 * Video: https://www.bilibili.com/video/BV19t4y1b7av?share_source=copy_web
 
 * Project: https://sites.google.com/view/gccd-pt/site
@@ -39,11 +41,15 @@ You may be informed to install the following toolboxes by MATLAB (if any).
 If you find the codes and/or paper are helpful, you can star this repository and cite our paper:
 
 ```
-@article{zhang2022generalized,
-  title={A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments},
-  author={Zhang, Zeqing and Zhang, Yinqiang and Han, Ruihua and Zhang, Liangjun and Pan, Jia},
-  journal={arXiv preprint arXiv:2206.13175},
-  year={2022}
+@article{zhang2022generalized,  
+    title={A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments},
+    author={Zhang, Zeqing and Zhang, Yinqiang and Han, Ruihua and Zhang, Liangjun and Pan, Jia},
+    journal={IEEE Robotics and Automation Letters},
+    year={2022},
+    volume={7},  
+    number={4},  
+    pages={9810-9817},  
+    doi={10.1109/LRA.2022.3191934}
 }
 ```
 
