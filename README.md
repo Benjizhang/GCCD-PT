@@ -41,15 +41,15 @@ You may be informed to install the following toolboxes by MATLAB (if any).
 If you find the codes and/or paper are helpful, you can star this repository and cite our paper:
 
 ```
-@article{zhang2022generalized,  
-    title={A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments},
-    author={Zhang, Zeqing and Zhang, Yinqiang and Han, Ruihua and Zhang, Liangjun and Pan, Jia},
-    journal={IEEE Robotics and Automation Letters},
-    year={2022},
-    volume={7},  
-    number={4},  
-    pages={9810-9817},  
-    doi={10.1109/LRA.2022.3191934}
+@article{zhang2022generalized,
+  title={A Generalized Continuous Collision Detection Framework of Polynomial Trajectory for Mobile Robots in Cluttered Environments},
+  author={Zhang, Zeqing and Zhang, Yinqiang and Han, Ruihua and Zhang, Liangjun and Pan, Jia},
+  journal={IEEE Robotics and Automation Letters},
+  volume={7},
+  number={4},
+  pages={9810--9817},
+  year={2022},
+  publisher={IEEE}
 }
 ```
 
