@@ -1,1 +1,1 @@
-The animation of the quadrotor flying to the tilted ellipsoid is saved as the avi file here.
+The animation of the quadrotor flying to obstacles is saved as the avi file here.
