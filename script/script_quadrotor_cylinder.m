@@ -1,4 +1,4 @@
-% script to show the qudrotor moving toward a list of cylindrical obstacles
+% script to show the quadrotor moving toward a list of cylindrical obstacles
 % the GCCD-PT can return the collision-free intervals (presented in Fig.5 (a))
 %
 % Reference paper:

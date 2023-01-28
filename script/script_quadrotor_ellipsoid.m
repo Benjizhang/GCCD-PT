@@ -1,4 +1,4 @@
-% script to show the qudrotor moving toward a tilted ellipsoid
+% script to show the quadrotor moving toward a tilted ellipsoid
 % the GCCD-PT can return the collision-free intervals (presented in Fig.1(b)) 
 %
 % Reference paper:

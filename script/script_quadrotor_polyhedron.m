@@ -1,4 +1,4 @@
-% script to show the qudrotor moving toward a list of polyhedra (triangle mesh)
+% script to show the quadrotor moving toward a list of polyhedra (triangle mesh)
 % the GCCD-PT can return the collision-free intervals (presented in Fig.5 (b)/(c))
 %
 % Reference paper:
