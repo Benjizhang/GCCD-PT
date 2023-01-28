@@ -12,8 +12,9 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 * Project: https://sites.google.com/view/gccd-pt/site
 
 ## News
-* The [v1.1](https://github.com/Benjizhang/GCCD-PT/releases) is released: 
-**Exp. on CCD for the quadrotor with several cylinders.**
+* The [v1.3](https://github.com/Benjizhang/GCCD-PT/releases) is released: 
+**Exp. on CCD for the quadrotor with polyhedra (defined by triangle mesh).**
+<img width="350" height="350" alt="Fig.5(b) in the paper" src="https://user-images.githubusercontent.com/20884450/215252290-c95da57b-38be-4d9b-95a8-426683489f2b.png"/>
 
 
 ## Test Environment
@@ -35,7 +36,7 @@ You may be informed to install the following toolboxes by MATLAB (if any).
 ## Get Started
 * Run example files in the **script** folder. For example:
 
-![example_script](https://user-images.githubusercontent.com/20884450/215128200-c82ee4c0-2157-4e82-8194-fd700816594d.png)
+![Sexample_script](https://user-images.githubusercontent.com/20884450/215252763-c94d7fa9-d743-4ee0-bc31-df50866e88e1.png)
 
 ## Citation
 If you find the codes and/or paper are helpful, you can star this repository and cite our paper:
