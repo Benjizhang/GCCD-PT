@@ -87,7 +87,7 @@ function animationUAVSegTri2(ax,robpts,trajALL,trajId,tri,tm_via,g,area,videoNam
 
         pause(0.1)
     end
-    v = VideoWriter(['.\..\video\' videoName]);
+    v = VideoWriter(['.\video\' videoName]);
     v.FrameRate = t_f;
     open(v)
     writeVideo(v,mov);

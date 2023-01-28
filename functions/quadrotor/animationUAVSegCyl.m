@@ -84,7 +84,7 @@ function animationUAVSegCyl(ax,robpts,trajALL,trajId,obsInfo,tm_via,g,area,video
 
         pause(0.1)
     end
-    v = VideoWriter(['.\..\video\' videoName]);
+    v = VideoWriter(['.\video\' videoName]);
     v.FrameRate = t_f;
     open(v)
     writeVideo(v,mov);
