@@ -1,5 +1,5 @@
 % script to show the qudrotor moving toward a tilted ellipsoid
-% the GCCD-PT can return the collision-free intervals
+% the GCCD-PT can return the collision-free intervals (presented in Fig.1(b)) 
 %
 % Reference paper:
 %      Zhang, Z., et al. (2022). "A Generalized Continuous Collision Detection Framework of 
