@@ -7,9 +7,14 @@ This repository is the source code of the paper "A Generalized Continuous Collis
 
 * DOI: https://ieeexplore.ieee.org/document/9833268
 
-* Video: https://www.bilibili.com/video/BV19t4y1b7av?share_source=copy_web
-
 * Project: https://sites.google.com/view/gccd-pt/site
+
+* RA-L Video: https://www.bilibili.com/video/BV19t4y1b7av?share_source=copy_web
+* IROS 2022 (EN): https://www.bilibili.com/video/BV148411b7t2/?share_source=copy_web&vd_source=6e79c82bafd69d6d89e266880bc4c8c3
+* IROS 2022 (CN): https://www.bilibili.com/video/BV14d4y127Kk/?share_source=copy_web&vd_source=6e79c82bafd69d6d89e266880bc4c8c3
+<img width="650" height="350" alt="cover_3053" src="https://user-images.githubusercontent.com/20884450/215252986-1c9c15e4-f8ad-4f8a-8cb6-251eb4c2de59.jpg"/>
+
+
 
 ## News
 * The [v1.3](https://github.com/Benjizhang/GCCD-PT/releases) is released: 
@@ -58,5 +63,6 @@ If you find the codes and/or paper are helpful, you can star this repository and
 As an open source library, any problem/feedback/issue/bug are welcome.
 
 Contact: Benji Z. Zhang (zzqing@connect.hku.hk)
+
 
 
