@@ -1,5 +1,5 @@
 % script to show the qudrotor moving toward a list of cylindrical obstacles
-% the GCCD-PT can return the collision-free intervals
+% the GCCD-PT can return the collision-free intervals (presented in Fig.5 (a))
 %
 % Reference paper:
 %      Zhang, Z., et al. (2022). "A Generalized Continuous Collision Detection Framework of 
@@ -130,24 +130,24 @@ for trajId = 1:num_traj
     
     % -------- GCCD-PT --------
     % cal. collision FREE intervals for the quadrotor and cylinders
-    intvIF = calCFIntvSegCylinder(Eedge_i,Cylinder,path,safe_dis,tm_via)
+    intvCF = calCFIntvSegCylinder(Eedge_i,Cylinder,path,safe_dis,tm_via)
     % -------- GCCD-PT --------
 
     pnxyx{1}=trajXALL{trajId};
     pnxyz{1}=trajXALL{trajId};
     pnxyz{2}=trajYALL{trajId};
     pnxyz{3}=trajZALL{trajId};
-    if size(intvIF,1) >= 2
-        num_IF = size(intvIF,1);
+    if size(intvCF,1) >= 2
+        num_IF = size(intvCF,1);
         for k = 1:num_IF-1
             % uncomment to plot quadrotor pos at start & end pts of collision
-            %%% plotCur6DofUAVFillBox3d(ax1,robpts,path,intvIF(k,2))
-            %%% plotCur6DofUAVFillBox3d(ax1,robpts,path,intvIF(k+1,1))
+            %%% plotCur6DofUAVFillBox3d(ax1,robpts,path,intvCF(k,2))
+            %%% plotCur6DofUAVFillBox3d(ax1,robpts,path,intvCF(k+1,1))
             % plot collision interval & no collision interval   
-            plotB3dTime3(ax1,pnxyz,[],[intvIF(k,1),intvIF(k,2)],'c')
-            plotB3dTime3(ax1,pnxyz,[],[intvIF(k,2),intvIF(k+1,1)],'r')
+            plotB3dTime3(ax1,pnxyz,[],[intvCF(k,1),intvCF(k,2)],'c')
+            plotB3dTime3(ax1,pnxyz,[],[intvCF(k,2),intvCF(k+1,1)],'r')
         end
-        plotB3dTime3(ax1,pnxyz,[],[intvIF(num_IF,1),intvIF(num_IF,2)],'c')
+        plotB3dTime3(ax1,pnxyz,[],[intvCF(num_IF,1),intvCF(num_IF,2)],'c')
     else
         plotB3dTime3(ax1,pnxyz,[],[tm_via(1),tm_via(2)],'c')
     end
